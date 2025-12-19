@@ -1,3 +1,9 @@
+# Next.js 构建输出
+.next/
+.out/
+.next/cache/
+.next/standalone/
+.next/types/
 # Logs
 logs
 *.log
