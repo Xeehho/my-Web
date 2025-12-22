@@ -22,12 +22,12 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 16,
+            lineNumber: 17,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 9
     }, this);
 }

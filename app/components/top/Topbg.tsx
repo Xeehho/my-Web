@@ -20,26 +20,14 @@ const socialItems = [
 
 
 const Topbg = () => {
-    // 或者只选择需要的部分（推荐，避免不必要的重渲染）
-    // const count = useStore((state) => state.count)
-    // const increment = useStore((state) => state.increment)
-    // const decrement = useStore((state) => state.decrement)
-    // const reset = useStore((state) => state.reset)
-
-    // const {count, increment, decrement, reset} = useStore((state) => ({
-    //     count: state.count,
-    //     increment: state.increment,
-    //     decrement: state.decrement,
-    //     reset: state.reset,
-    // }))
-
     const { count, increment, decrement, reset } = useCountStore()
 
     return (
+        // <></>
         // <div onClick={increment}>{count}</div>
-        <div style={{ width: '100%', height: 600, position: 'relative' }}>
+        <div style={{ width: '100%', height: 2000, position: 'relative' }}>
             {/* 背景 */}
-            <div className={styles.liquidEther}>
+            {/* <div className={styles.liquidEther}>
                 <LiquidEther
                     colors={['#5227FF', '#FF9FFC', '#B19EEF']}
                     mouseForce={20}
@@ -57,9 +45,9 @@ const Topbg = () => {
                     autoResumeDelay={3000}
                     autoRampDuration={0.6}
                 />
-            </div>
+            </div> */}
             {/* 右边菜单组件 */}
-            <div style={{ height: '100vh' }}>
+            {/* <div style={{ height: '100vh' }}>
                 <StaggeredMenu
                     position="left"
                     items={menuItems}
@@ -75,7 +63,7 @@ const Topbg = () => {
                     onMenuOpen={() => console.log('Menu opened')}
                     onMenuClose={() => console.log('Menu closed')}
                 />
-            </div>
+            </div> */}
         </div>
     )
 }

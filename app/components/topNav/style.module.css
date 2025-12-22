@@ -1,0 +1,129 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  gap: 40px;
+}
+
+.navContainer.scrolled {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 9999px;
+  margin: 10px auto;
+  width: fit-content;
+  max-width: 90%;
+  gap: 20px;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  opacity: 1;
+  transform: translateX(-100px);
+  flex-shrink: 0;
+}
+
+.navContainer.scrolled .logo {
+  font-size: 20px;
+  color: #333333;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navItemsWrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+.navContainer.scrolled .navItemsWrapper {
+  gap: 20px;
+}
+
+.navItem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.navContainer.scrolled .navItem {
+  padding: 6px 14px;
+  color: #333333;
+}
+
+.navItem:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+  transform: translateY(-1px);
+}
+
+.navContainer.scrolled .navItem:hover {
+  background-color: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.navText {
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.navContainer.scrolled .navText {
+  font-size: 15px;
+}
+
+.navItem:hover .navText {
+  color: #3b82f6;
+  transform: scale(1.05);
+  letter-spacing: 0.3px;
+}
+
+.themeToggle {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 8px;
+  border-radius: 50%;
+  opacity: 1;
+  transform: translateX(100px);
+  flex-shrink: 0;
+}
+
+.navContainer.scrolled .themeToggle {
+  font-size: 18px;
+  color: #333333;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.themeToggle:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+  transform: rotate(180deg);
+}
