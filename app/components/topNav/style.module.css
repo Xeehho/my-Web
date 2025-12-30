@@ -30,10 +30,10 @@
   font-size: 24px;
   font-weight: bold;
   color: #000000;
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   opacity: 1;
-  transform: translateX(-100px);
+  transform: translateX(0);
   flex-shrink: 0;
 }
 
@@ -41,7 +41,7 @@
   font-size: 20px;
   color: #333333;
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(10px);
 }
 
 .navItemsWrapper {
@@ -108,11 +108,11 @@
 .themeToggle {
   font-size: 20px;
   cursor: pointer;
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 8px;
   border-radius: 50%;
   opacity: 1;
-  transform: translateX(100px);
+  transform: translateX(0);
   flex-shrink: 0;
 }
 
@@ -120,7 +120,7 @@
   font-size: 18px;
   color: #333333;
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(-10px);
 }
 
 .themeToggle:hover {
